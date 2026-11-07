@@ -1,4 +1,5 @@
 {
+  "nodeModulesDir": "none",
   "tasks": {
     "check-handles": "deno run --allow-net --allow-read --allow-write --allow-env scripts/check-handles.ts",
     "precache": "deno run --allow-net --allow-read --allow-write --allow-env scripts/precache.ts",
@@ -6,5 +7,9 @@
     "export-fixtures": "deno run --allow-read --allow-write scripts/export-fixtures.ts",
     "test:backend": "deno test --allow-read --allow-write --allow-env supabase/functions/_shared/pipeline.test.ts"
   },
-  "exclude": ["node_modules", "dist", "src"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src"
+  ]
 }
