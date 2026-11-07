@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+scripts/.env
+scripts/cache
+reports
+*.tsbuildinfo
+docs/.video
