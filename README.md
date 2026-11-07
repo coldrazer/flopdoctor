@@ -12,7 +12,7 @@
   <img alt="React 18" src="https://img.shields.io/badge/React-18-149ECA?style=flat-square&logo=react&logoColor=white">
   <img alt="Supabase" src="https://img.shields.io/badge/Supabase-Postgres%20%2B%20Edge-3ECF8E?style=flat-square&logo=supabase&logoColor=white">
   <img alt="Deno" src="https://img.shields.io/badge/scripts-Deno-000000?style=flat-square&logo=deno&logoColor=white">
-  <img alt="Tests" src="https://img.shields.io/badge/tests-12%20passing-3CF2A0?style=flat-square">
+  <a href="https://github.com/coldrazer/flopdoctor/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/coldrazer/flopdoctor/ci.yml?branch=main&style=flat-square&label=CI"></a>
 </p>
 
 <p align="center">
@@ -42,6 +42,7 @@ Built for **Hack the Feed**, the creator-tools hackathon hosted by Oriane, GMI C
 - [Project layout](#project-layout)
 - [Testing](#testing)
 - [Roadmap](#roadmap)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Screens
@@ -201,13 +202,17 @@ deno task test:backend   # the full pipeline against a fake Oriane and a fake mo
 npm run typecheck
 ```
 
-The backend tests cover the full pipeline with and without the model, the fallback when the model returns junk, dropping invented evidence, unindexed handles, and the cache (a second run makes no network calls).
+The backend tests cover the full pipeline with and without the model, the fallback when the model returns junk, dropping invented evidence, unindexed handles, and the cache (a second run makes no network calls). All of it runs on every push and pull request in [CI](.github/workflows/ci.yml).
 
 ## Roadmap
 
 - **Agency mode.** Paste ten handles and see who's in a slump, with each creator's top fix.
 - **Monday check-up.** A weekly diagnosis for every creator you follow.
 - **Hook lab.** Paste a draft hook and score it against your own winners before you film.
+
+## Contributing
+
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and checks, and [SECURITY.md](SECURITY.md) to report a vulnerability privately.
 
 ## Notes
 

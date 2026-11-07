@@ -1,0 +1,21 @@
+name: Feature idea
+description: Suggest something Flop Doctor should diagnose or do.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What creator problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should Flop Doctor do?
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data it needs
+      description: Which Oriane fields or other data would this rely on, if you know?

@@ -1,0 +1,44 @@
+name: Bug report
+description: Something on a screen, in a script or in the pipeline isn't working.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - Wheel / intake
+        - Diagnosis chart
+        - Prescription
+        - Share card
+        - Edge Functions (run-scan, get-scan)
+        - Console scripts
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Data mode
+      options:
+        - fixture (sample data)
+        - live
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Browser / device or runtime
+      placeholder: Chrome 131 on macOS · iPhone 15 Safari · Deno 2.1
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste console output or attach screenshots. Remove API keys first.
