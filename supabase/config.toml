@@ -1,0 +1,6 @@
+# Lovable Cloud manages this file when connected; these settings matter for `supabase functions deploy`.
+[functions.run-scan]
+verify_jwt = false
+
+[functions.get-scan]
+verify_jwt = false

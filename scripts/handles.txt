@@ -1,0 +1,5 @@
+# One per line: "@handle" checks both platforms, or "tiktok @handle" / "instagram @handle".
+# Judges first (check they're indexed before demoing live!), then fallback sample patients.
+instagram @datawithamney
+instagram @databysumit
+# add 4-6 well-indexed creators across niches below
